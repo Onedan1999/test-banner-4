@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Calibri;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  color: white;
+}
+
+.banner {
+  width: 1000px;
+  height: 450px;
+  background-image: url("../img/dream-vacation-spot4.jpg");
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../img/dream-vacation-spot4.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0px 0px 100px #8c8c8c42;
+}
+
+.banner-left {
+  align-items: center;
+  display: flex;
+  padding-left: 80px;
+  height: 100%;
+}
+
+.banner-l-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner-heading {
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+span {
+  font-weight: 900;
+}
+
+.banner-txt {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.banner-btn {
+  padding: 14px 24px;
+  background-color: #003b95;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border: 2px solid #003b95;
+  width: fit-content;
+}
+
+.banner-btn:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1100px) {
+  .banner {
+    width: 100%;
+    height: fit-content;
+    background-position: 35% 75%;
+    height: 300px;
+  }
+
+  .banner-left {
+    display: flex;
+    padding: 40px;
+    height: 100%;
+  }
+
+  .banner-l-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .banner-heading {
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 8px;
+    margin-top: 0px;
+  }
+
+  .banner-txt {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .banner-btn {
+    font-size: 14px;
+  }
+}
